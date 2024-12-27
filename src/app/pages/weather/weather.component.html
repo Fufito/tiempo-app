@@ -1,1 +1,6 @@
-<p>weather works!</p>
+<p>Plourà o no?</p>
+<div *ngIf="weatherData">
+    <h1>{{ weatherData.name }}</h1>
+    <p>Temperatura: {{ weatherData.main.temp }}°K</p>
+    <p>Temps: {{ weatherData.weather[0].description }}</p>
+  </div>
