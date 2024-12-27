@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class CalendarComponent {
 
+  selectedDate: Date | null = null;
+
+  onDateChange(date: Date | null): void {
+    this.selectedDate = date;
+  }
 }
