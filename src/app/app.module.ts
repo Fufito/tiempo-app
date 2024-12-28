@@ -7,9 +7,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module'; // Importa el módulo de enrutamiento
-import { AppComponent } from './app.component';
+import { AppComponent } from './app.component'; // Importa AppComponent
 
 @NgModule({
+  declarations: [
+    // Asegúrate de declarar AppComponent aquí
+  ],
   imports: [
     BrowserModule,
     CommonModule,
@@ -18,9 +21,10 @@ import { AppComponent } from './app.component';
     MatNativeDateModule,
     MatInputModule,
     MatFormFieldModule,
-    AppRoutingModule // Agrega el módulo de enrutamiento aquí
+    AppRoutingModule, // Agrega el módulo de enrutamiento aquí
+    AppComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [bootstrapApplication],
 })
 export class AppModule { }
