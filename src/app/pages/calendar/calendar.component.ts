@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-
+import { NgIf } from '@angular/common';
 @Component({
   selector: 'app-calendar',
-  imports: [],
+  standalone: true,
+  imports: [NgIf],
   templateUrl: './calendar.component.html',
   styleUrl: './calendar.component.css'
 })
