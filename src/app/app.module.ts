@@ -1,21 +1,30 @@
-// filepath: /c:/Users/Jacky/Desktop/git-copilot/curs_git_copilot/tiempo-app/src/app/app.module.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module'; // Importa el módulo de enrutamiento
-import { AppComponent } from './app.component';
+import { CommonModule } from '@angular/common';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module'; // Importa el módulo de enrutamiento
+import { AppComponent } from './app.component'; // Importa AppComponent
+
 @NgModule({
   declarations: [
-    AppComponent
+    // Asegúrate de declarar AppComponent aquí
   ],
   imports: [
     BrowserModule,
+    CommonModule,
+    RouterModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    AppRoutingModule // Agrega el módulo de enrutamiento aquí
+    MatInputModule,
+    MatFormFieldModule,
+    AppRoutingModule, // Agrega el módulo de enrutamiento aquí
+    AppComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [bootstrapApplication],
 })
 export class AppModule { }
