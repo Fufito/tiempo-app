@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { NgIf } from '@angular/common';
 import { WeatherService } from '../../services/weather.service';
 
 @Component({
   selector: 'app-weather',
+  standalone: true,
+  imports: [NgIf],
   templateUrl: './weather.component.html',
   styleUrls: ['./weather.component.css']
 })
